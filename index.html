@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+    <a href="#contenido" class="redirigir">Ir al contenido principal</a>
+
+    <header>
+
+        <nav aria-label="Navegacion principal">
+
+            <h1>Ángel Gabriel Delgado Pérez</h1>
+
+            <ul>
+                <li><a href="#sobre_mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </nav>
+        
+    </header>
+
+    <main id="contenido" tabindex="-1">
+
+        <section id="sobre_mi" aria-labelledby="titulo_sobre_mi">
+
+            <h2 id="titulo_sobre_mi">Sobre mí</h2>
+
+            <p>Desarrollador DAM/DAW.</p>
+
+            <address>
+
+                <ul>
+                    <li><a href="mailto:19gdp97@gmail.com">19gdp97@gmail.com</a></li>
+                    <li><a href="https://github.com/GabrielDP97">github.com/GabrielDP97</a></li>
+                    <li>Algeciras, Cádiz</li>
+                </ul>
+
+            </address>
+        </section>
+
+        <section id="proyectos" aria-labelledby="titulo_proyecto">
+
+            <h2 id="titulo_proyecto">Proyectos</h2>
+
+            <article aria-labelledby="primer_proyecto">
+
+                <h3 id="primer_proyecto">Portfolio Web</h3>
+
+                <p>Sitio personal con HTML, CSS y JS</p>
+
+                <ul>
+                    <li><strong>Stack:</strong> HTML5, CSS, JS</li>
+                    <li><strong>Repositorio</strong><a href="https://github.com/GabrielDP97">github.com/GabrielDP97/portfolio_web</a></li>
+                    <li><strong>Demo:</strong><a href="https://GabrielDP97.github.io/portfolio_web/">GabrielDP97.github.io/portfolio_web/</a></li>
+                </ul>
+
+            </article>
+            
+        </section>
+
+        <section>
+            <section id="Contacto" aria-labelledby="titulo_contacto">
+                <h2 id="titulo_contacto">Contacto</h2>
+
+                <form id="formulario_contacto" action="#" method="post" novalidate aria-describedby="ayuda_contacto">
+                    <p id="ayuda_contacto">Todos los campos son obligatorios.</p>
+
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" minlength="2" autocomplete="name" required/>
+                    </div>
+
+                    <div>
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required/>
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" rows="5" minlength="10" required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer><small>@2025 Ángel Gabriel Delgado Pérez</small></footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
